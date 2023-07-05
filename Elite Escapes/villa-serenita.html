@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Elite Escapes</title>
+    <title>Elite Escapes | Villa Serenita</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -98,7 +98,7 @@
     <div class="container-fluid">
 
 <!-- Intro copy NEW (text)-->
-<h2 class="intro-copy">Immerse Yourself in Unrivaled Comfort and Style</h2>
+<h2 class="intro-copy">Unrivaled Comfort and Style</h2>
 
 <h3>The Pinnacle of Luxury</h3>
 
@@ -182,26 +182,37 @@
   
   </div>
   </section>
+<br>
+<!--Booking Form-->
+
 <div class="container py-4">
   <section id="villas" class="pt-md-5">
-    <i class="fa-solid fa-calendar-check center" style="color: #B18052;"></i>
-      <h2 id="enquire" class="text-center my-5">Book now</h2>
+    <i class="fa-solid fa-calendar-check center" style="color: #b18052;"></i>
+      <h2 id="enquire" class="text-center my-5">Book now</h2
 </div>
-<!--Booking Form-->
+
+<div class="container my-5">
+  <div class="row justify-content-center">
+      <!--<div class="col-lg-9"> -->
+      <p class="centered-body-text">We don't blame you for wanting to get your dates booked as soon as possible. Simply fill out the form below and someone will get back to you to custom build your perfect getaway. </p>
+</div>
+
+
 
 <form action="reservation.php" method="post">
   <div class="elem-group">
-    <label for="name">Your Name</label>
+    <label for="name">Your name</label>
     <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
   </div>
   <div class="elem-group">
-    <label for="email">Your E-mail</label>
+    <label for="email">Your e-mail</label>
     <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
   </div>
   <div class="elem-group">
-    <label for="phone">Your Phone</label>
+    <label for="phone">Your phone</label>
     <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
   </div>
+  <br>
   <hr>
   <div class="elem-group inlined">
     <label for="adult">Adults</label>
@@ -209,15 +220,20 @@
   </div>
 
   <div class="elem-group inlined">
-    <label for="checkin-date">Check-in Date</label>
+    <label for="adult">Children</label>
+    <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+  </div>
+
+  <div class="elem-group inlined">
+    <label for="checkin-date">Check-in date</label>
     <input type="date" id="checkin-date" name="checkin" required>
   </div>
   <div class="elem-group inlined">
-    <label for="checkout-date">Check-out Date</label>
+    <label for="checkout-date">Check-out date</label>
     <input type="date" id="checkout-date" name="checkout" required>
   </div>
   <div class="elem-group">
-    <label for="room-selection">Select Room Preference</label>
+    
     <select id="room-selection" name="room_preference" required>
         <option value="">Choose a Villa from the List</option>
         <option value="serenita">Villa Serenita</option>
@@ -228,18 +244,25 @@
 	 <option value="amore">Villa Amore</option>
     </select>
   </div>
+  <br>
   <hr>
   <div class="elem-group">
-    <label for="message">Anything Else?</label>
+    <label for="message">Anything else?</label>
     <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
   </div>
+  <div class="col-12">
+            <div class="row">
+              <div class="col-md-12">
   <button type="submit">Book The Rooms</button>
+</div>
+</div>
+</div>
 </form></p>
 
 </div>
 
 
-
+</div>
 
 <!-- Gallery -->
 <div class="container">
@@ -259,6 +282,7 @@
     </div>
   </div>
 
+</div>
 
 
 
